@@ -2,7 +2,8 @@ This is the README for the Shabbes Notifier Browser Addon.
 
 How to install
 ==============
-As long as the addon is not registered as a browser addon by Mozilla, it may be installed as a Temporary Extension as follows (tested with Firefox 56):
+As long as the addon is not registered as a browser addon by Mozilla, it may be
+installed as a Temporary Extension as follows (tested with Firefox 56):
 
 1. Pull the code from Github. Under Linux it would be similar to:
    $ git clone https://github.com/shabbesnotifier/shabbes-notifier.git
