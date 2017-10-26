@@ -21,12 +21,12 @@ function documentBlocks(document)
       if (count > 0)
       {
         consoleLog("document contains " + count + " references to holyclock.com");
-        consoleLog("document blocks");
+        consoleLog("document blocks.");
         return true;
       }
     }
   }
-  consoleLog("document does not contain blocks.");
+  consoleLog("document does not block.");
   return false;
 }
 
