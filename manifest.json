@@ -6,7 +6,7 @@
   "homepage_url": "http://github.com/TODO",
 
   "icons": {
-    "48": "icons/beasts-48-ok.png"
+    "48": "icons/non-observing-1-48.png"
   },
   "permissions": [
     "activeTab"
