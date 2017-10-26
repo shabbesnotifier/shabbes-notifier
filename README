@@ -1,1 +1,10 @@
 This is the README for the Shabbes Notifier Browser Addon.
+
+How to install
+==============
+As long as the addon is not registered as a browser addon by Mozilla, it may be installed as a Temporary Extension as follows (tested with Firefox 56):
+1. Pull the code from Github.
+2. Open Firefox and type in the url: about:debugging.
+3. Click the Load Temporary Add-on button.
+4. Browse to the root of the source code pulled on step 1 and choose any file within it and click Open.
+5. You should see a headline "Temporary Extensions" and Shabbes Notifier listed beneath it.
