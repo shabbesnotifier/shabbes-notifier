@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Shabbes Notifier",
+  "version": "1.0",
+  "description": "Adds a red border to all webpages running Shabbat blockers.",
+  "homepage_url": "http://github.com/TODO",
+
+  "icons": {
+    "48": "icons/beasts-48-ok.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/non-observing-1-48.png",
+    "default_title": "Shabbes Notifier",
+    "default_popup": "popup/shabbes_settings.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["shabbesnotifier.js"]
+    }
+  ]
+}
+
