@@ -29,5 +29,31 @@ function documentBlocks(document)
   return false;
 }
 
-documentBlocks(document);
+function doNotify(message)
+{
+  if (!("Notification" in window))
+  {
+    alert(message);
+  }
+  else if (Notification.permission === "granted")
+  {
+    var notification = new Notification(message);
+  }
+  else if (Notification.permission !== "denied")
+  {
+    Notification.requestPermission(function (permission)
+    {
+      if (permission === "granted")
+      {
+        var notification = new Notification(message);
+      }
+    });
+  }
+  consoleLog(message);
+}
+
+if (documentBlocks(document))
+{
+  doNotify("This page uses HolyClock.com!");
+}
 
