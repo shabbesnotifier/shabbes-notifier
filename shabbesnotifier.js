@@ -16,8 +16,7 @@ function documentBlocks(document)
     var script = document.scripts[i];
     if (script.src)
     {
-      var pattern = /holyclock.com/i;
-      var count = script.src.search(pattern);
+      var count = script.src.search(/holyclock.com/i);
       if (count > 0)
       {
         consoleLog("document contains " + count + " references to holyclock.com");
