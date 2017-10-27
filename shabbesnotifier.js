@@ -30,8 +30,5 @@ function documentBlocks(document)
   return false;
 }
 
-consoleLog("subscribing");
-browser.runtime.onMessage.addListener(shabbesOnMessage);
-
 documentBlocks(document);
 
